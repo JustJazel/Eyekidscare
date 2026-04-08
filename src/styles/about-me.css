@@ -1,0 +1,88 @@
+.about-container {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* HEADER */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.about-header p {
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* CARD */
+.about-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.about-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-card h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.about-card p {
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.about-card ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+
+.text-muted {
+  opacity: 0.7;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+}

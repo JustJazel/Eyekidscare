@@ -14,8 +14,6 @@ const items = ref([
 
 
 const hovered = ref<string | null>(null)
-
-const linkColor = ref('#000000') // default text color
 </script>
 
 <template>

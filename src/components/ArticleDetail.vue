@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
-import Card from 'primevue/card'
 
-const route = useRoute()
+import Card from 'primevue/card'
 
 const article = {
   title: "The Sunburn Risk Many Australians Don’t Realise",

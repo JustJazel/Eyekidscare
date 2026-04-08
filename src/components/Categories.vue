@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import Card from 'primevue/card'
 import Divider from 'primevue/divider'
-import Tag from 'primevue/tag'
-import Accordion from 'primevue/accordion'
-import AccordionTab from 'primevue/accordiontab'
 import '../styles/home.css'
 
 import { ref } from 'vue'

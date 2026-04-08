@@ -3,7 +3,7 @@ import Button from 'primevue/button'
 import 'primeflex/primeflex.css'
 import '../styles/home.css' // adjust if your path is different
 
-import heroImage from '../assets/Jazel Equia.png'
+import heroImage from '../assets/kidpage.jpg'
 </script>
 
 <template>
@@ -12,20 +12,22 @@ import heroImage from '../assets/Jazel Equia.png'
     <!-- LEFT CONTENT -->
     <div class="hero-content">
       <h1 class="hero-title">
-        <span>Jazel Cal Equia</span>
-        <span> Software Engineer, Graphic Designer & Artist, Photographer and Editor</span>
+        <span>Help your kid unlock their full potential</span>
+        <span> with the right vision care</span>
       </h1>
       
 
       <p class="hero-text">
-     Where art and engineering shake hands.
+   Our optometrists have a special interest in children’s vision and myopia management. Book in today for a comprehensive vision assessment at one of our 5 Sydney locations!
       </p>
 
+       
       <div class="hero-button">
-        <a href="mailto:equiajazel@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Jazel,%20Enter%20your%20message%20here...">
-          <Button label="Let's Connect" />
-        </a>
+        <RouterLink to="/eye-test">
+          <Button label="Book an Eye Test" />
+        </RouterLink>
       </div>
+   
     </div>
 
     <!-- RIGHT IMAGE -->

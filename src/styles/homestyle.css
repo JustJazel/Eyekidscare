@@ -1,0 +1,127 @@
+/* ROOT COLORS */
+:root {
+  --primary: #9ECF67;
+  --light: #e4f0d0;
+  --muted: #c2d8b9;
+  --dark: #1a1a1a;
+  --gray: #515151;
+}
+
+/* HERO CONTAINER */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6%;
+  min-height: 90vh;
+  background: linear-gradient(135deg, var(--light), #ffffff);
+  gap: 3rem;
+}
+
+/* LEFT CONTENT */
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title span:last-child {
+  color: var(--primary);
+}
+
+/* TEXT */
+.hero-text {
+  font-size: 1.1rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* BUTTON */
+.hero-button .p-button {
+  background: var(--primary);
+  border: none;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(158, 207, 103, 0.3);
+}
+
+.hero-button .p-button:hover {
+  background: #88b95a;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(158, 207, 103, 0.4);
+}
+
+/* RIGHT IMAGE */
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+/* SOFT OVERLAY / SHAPE */
+.hero-overlay {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+  top: -5%;
+  left: -5%;
+  z-index: 1;
+  opacity: 0.25;
+  filter: blur(40px);
+}
+
+/* DECORATIVE CARD EFFECT */
+.hero-image-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: var(--muted);
+  border-radius: 20px;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-image-wrapper {
+    margin-top: 2rem;
+  }
+}
